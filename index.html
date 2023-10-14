@@ -1,0 +1,198 @@
+<!--PORTFOLIO WEBSITE MADE BY POLYBOTICS-->
+
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio by Polybotics</title>
+<link rel="stylesheet" href="./index.css">
+
+<!--FONTAWESOME->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+<link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+<link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
+<link rel="stylesheet" href="./assets/fontawesome/css/regular.css">
+</head>
+
+<body>
+
+<main>
+<!--NAVIGATION-->
+<nav class="fw flex ac">
+    <!--NAV LOGO-->
+    <div class="nav-logo">Port<span>folio</span> Website</div>
+    <!--NAV LINKS-->
+    <div class="nav-links flex ac jsb">
+        <div name="home" onclick="linkHandle(event)" class="nav-link active">Home</div>
+        <div name="service" onclick="linkHandle(event)" class="nav-link">Service</div>
+        <div name="portfolio" onclick="linkHandle(event)" class="nav-link">Portfolio</div>
+        <div name="rate" onclick="linkHandle(event)" class="nav-link">Rate</div>
+        <div name="contact" onclick="linkHandle(event)" class="nav-link">Contact</div>
+        <div onclick="openWhatsapp()" class="nav-link pri-btn">Chat Me</div>
+    </div>
+    
+    <!--RESPONSIVE NAV-->
+    <div onclick="showMobileMenu(event)" class="nav-icon center"><i class="far fa-bars"></i></div>
+</nav>
+
+<!--BODY-->
+<div class="body fw">
+    <!--HOME TAB-->
+    <a id="home"></a>
+    <div class="home-tab fw flex ac">
+        <div class="home-left">
+            <div class="home-title">Naomi Anyaegbu</div>
+            <div class="home-tag">A bunch of unnecessary write up to serve as the introductory text of this portfolio</div>
+            <div onclick="openWhatsapp()" class="home-btn pri-btn">WhatsApp Now</div>
+        </div>
+        
+        <div class="home-right">
+            <img src="./assets/photothumb.png">
+        </div>
+    </div>
+    
+    <!--SERVICE TAB-->
+    <a id="service"></a>
+    <div class="service-tab fw">
+        <div class="service-title fw tc">My Services</div>
+        <div class="service-tag fw tc">This is a list of services i can offer you if you are interested.</div>
+        <!--SERVICE LIST-->
+        <div class="service-list fw flex ac jc">
+            <div class="service">
+                <div class="service-icon center fw">
+                    <div class="service-icon-img"><img src="./assets/port2.png"></div>
+                </div>
+                <div class="service-name fw tc">Content Creation</div>
+                <div class="service-description fw tc">Making short videos, photos and other seo optimized posts to enhance your brand's social media reach amd presence.</div>
+            </div>
+            
+            <div class="service">
+                <div class="service-icon center fw">
+                    <div class="service-icon-img"><img src="./assets/port3.png"></div>
+                </div>
+                <div class="service-name fw tc">Graphics Designing</div>
+                <div class="service-description fw tc">Get yourself an extra ordinary flier or poster with a design that is guaranteed to bring more clients your way.</div>
+            </div>
+
+            <div class="service">
+                <div class="service-icon center fw">
+                    <div class="service-icon-img"><img src="./assets/port1.png"></div>
+                </div>
+                <div class="service-name fw tc">App Development</div>
+                <div class="service-description fw tc">Work smart and not hard by giving us the responsibilities of converting your unique business into a great mobile app.</div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--RATE TAB-->
+    <a id="rate"></a>
+    <div class="rate-tab fw flex ac jc">
+        <div class="rate center round">
+            <div class="rate-num fw tc">13k</div>
+            <div class="rate-tag fw tc">likes</div>
+        </div>
+        
+        <div class="rate center round">
+            <div class="rate-num fw tc">768</div>
+            <div class="rate-tag fw tc">clients</div>
+        </div>
+        
+        <div class="rate center round">
+            <div class="rate-num fw tc">1.2k</div>
+            <div class="rate-tag fw tc">videos</div>
+        </div>
+    </div>
+    
+    
+    <!--PORTFOLIO TAB-->
+    <a id="portfolio"></a>
+    <div class="port-tab fw">
+        <div class="port-title fw tc">My Portfolio Samples</div>
+        <!--PORTFOLIO LIST-->
+        <div class="port-list fw flex ac jc">
+            <div onclick="chooseSample(event)" name="graphic" class="port active">Graphic Designs</div>
+            <div onclick="chooseSample(event)" name="social" class="port">Social Posts</div>
+            <div onclick="chooseSample(event)" name="mobile" class="port">Mobile Apps</div>
+        </div>
+        <!-- PORTFOLIO DISPLAY -->
+        <div class="port-display fw">
+            <div id="graphic" class="port-show"></div>
+            <div id="social" class="port-show"></div>
+            <div id="mobile" class="port-show"></div>
+        </div>
+    </div>
+    
+    
+    <!--CONTACT TAB-->
+    <a id="contact"></a>
+    <div class="map-tab">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    
+    <div class="contact-background fw">
+        <!--CONTACT FORM-->
+        <div class="contact-tab flex jsb">
+            <div class="contact-left">
+                <div class="contact-title">Get in Touch</div>
+                <div class="contact-tag">Your business is in perfect care and control under our watch. All you have to do is reach out to us now to book yourself an extraordinary slot among thousands.</div>
+                
+                <div class="contact-list fw flex ac">
+                    <div class="contact-icon round center"><i class="far fa-phone"></i></div>
+                    <div class="contact-des">
+                        <div class="cd-name">Need to talk?</div>
+                        <div class="cd-value">+2349077296904</div>
+                    </div>
+                </div>
+                
+                <div class="contact-list fw flex ac">
+                    <div class="contact-icon round center"><i class="far fa-comment"></i></div>
+                    <div class="contact-des">
+                        <div class="cd-name">Prefer email instead?</div>
+                        <div class="cd-value">testmailnaomi@gmail.com</div>
+                    </div>
+                </div>
+                
+                <div class="contact-list fw flex ac">
+                    <div class="contact-icon round center"><i class="far fa-map"></i></div>
+                    <div class="contact-des">
+                        <div class="cd-name">Find us here</div>
+                        <div class="cd-value">30 New Road, Dos Mas, Imo State.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-right">
+                <div class="contact-title">Send an Enquiry</div>
+                
+                <div class="contact-form">
+                    <div class="cf-tab split">
+                        <input type="text" placeholder="Full Name" id="name" class="form cf-inp split">
+                        <input type="number" placeholder="WhatsApp Number" id="number" class="form cf-inp split">
+                    </div>
+                    <div class="cf-tab">
+                        <input type="text" placeholder="Email Address" id="email" class="form cf-inp fw">
+                    </div>
+                    <div class="cf-tab">
+                        <textarea type="text" placeholder="Type your message here" id="msg" class="form cf-text"></textarea>
+                    </div>
+                    <div class="cf-tab">
+                        <div onclick="sendMsg()" class="cf-btn pri-btn">Send Enquiry</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer fw center">made by <span>POLYBOTICS</span> 2023</div>
+</div>
+
+
+<div class="display-target"></div>
+</main>
+
+
+<!--SCRIPT-->
+<script src="./index.js"></script>
+</body>
+</html>
