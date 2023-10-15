@@ -109,7 +109,7 @@ nav{
 
 .nav-logo{
     width: 15rem;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--black);
     text-transform: uppercase;
@@ -124,10 +124,10 @@ nav{
 }
 
 .nav-link{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--black);
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding: 0 3px;
 }
 
@@ -159,13 +159,13 @@ nav{
 }
 
 .home-title{
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
     color: var(--black);
 }
 
 .home-tag{
-    font-size: 16px;
+    font-size: 12px;
     color: var(--dpale);
     padding: 25px 0;
 }
@@ -200,7 +200,7 @@ nav{
 }
 
 .service-tag{
-    font-size: 16px;
+    font-size: 14px;
     color: var(--dpale);
     padding: 10px 15px;
 }
@@ -364,7 +364,7 @@ nav{
     max-height: 30rem;
     aspect-ratio: 1/1;
     overflow-x: hidden;
-    grid-template-columns = auto auto auto;
+    grid-template-columns: auto auto auto;
     gap: 10px;
     padding: 10px;
 }
